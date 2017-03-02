@@ -8,7 +8,7 @@
 
   function ContactsResource($resource) {
     return $resource(
-      'http://localhost:3000/api/v1/contacts/:id',
+      'https://rails-api-contact-catalog.herokuapp.com/api/v1/contacts/:id',
       { id: '@id' },
       { 'update': { method: 'PATCH', isArray:false } }
     );
