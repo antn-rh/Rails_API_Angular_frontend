@@ -85,6 +85,7 @@
     function updateContact() {
       ContactsResource.update(vm.contact).$promise.then(function(editedContact) {
         vm.contact = editedContact;
+        console.log(editedContact)
         $state.go('contactsIndex');
       });
     }

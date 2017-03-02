@@ -9,7 +9,7 @@
   function ContactsResource($resource) {
     return $resource(
       'http://localhost:3000/api/v1/contacts/:id',
-      { id: '@_id' },
+      { id: '@id' },
       { 'update': { method: 'PATCH', isArray:false } }
     );
   }
