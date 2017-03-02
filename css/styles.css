@@ -1,0 +1,25 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body {
+  font-family: 'Roboto', monospace;
+}
+
+.page-content {
+  margin: 1rem;
+}
+
+.index-contact-cards {
+  text-align: center;
+  float: left;
+  width: 300px;
+}
+
+.new-contact-card {
+  width: 600px;
+}
+
+.show-contact-card {
+  width: 500px;
+}

@@ -1,0 +1,15 @@
+<div class="page-content">
+  Showing information for:
+  {{ contactShowVm.contact.first_name + ' ' + contactShowVm.contact.last_name }}
+
+  <md-card class="show-contact-card">
+    <md-toolbar class="md-warn">
+      <md-card-content>
+        <pre id="json">{{ contactShowVm.jsonContact }}</pre>
+      </md-card-content>
+    </md-toolbar>
+  </md-card>
+
+  <md-button ui-sref="contactsEdit({ id: contactShowVm.contact.id })">Edit</md-button>
+  <md-button ng-click="contactShowVm.deleteContact(contact)">Delete</md-button>
+</div>

@@ -1,0 +1,12 @@
+<div class="page-content">
+  <p>Here is a list of the contacts in the database:</p>
+
+  <md-card class="index-contact-cards" ng-repeat="contact in contactListVm.contacts">
+    <md-toolbar class="md-warn">
+      <md-card-content>
+        <p>{{ contact.first_name }} {{ contact.last_name }}</p>
+        <span ui-sref="contactsShow({ id: contact.id })">(click to show info)</span>
+      </md-card-content>
+    </md-toolbar>
+  </md-card>
+</div>

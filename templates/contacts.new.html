@@ -1,0 +1,53 @@
+<div class="page-content">
+  Enter new contact information.
+</div>
+
+<md-card class="new-contact-card">
+  <md-card-content>
+    <form name="colorForm" ng-submit="contactNewVm.addContact()">
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>First Name: </label>
+        <input type="text" ng-model="contactNewVm.newContact.first_name" required>
+        <div ng-messages="colorForm.favoriteColor.$error">
+          <div ng-message="required">This is required!</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Last Name: </label>
+        <input type="text" ng-model="contactNewVm.newContact.last_name" required>
+        <div ng-messages="colorForm.favoriteColor.$error">
+          <div ng-message="required">This is required!</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container >
+        <label>Age: </label>
+        <input type="number" ng-model="contactNewVm.newContact.age">
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Phone Number: </label>
+        <input type="text" ng-model="contactNewVm.newContact.phone_number">
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Email: </label>
+        <input type="text" ng-model="contactNewVm.newContact.email">
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Your Computer Languages</label>
+        <textarea ng-model="contactNewVm.newContact.computer_languages" md-maxlength="150" rows="3" md-select-on-focus></textarea>
+      </md-input-container>
+
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>Your Pets</label>
+        <textarea ng-model="contactNewVm.newContact.pets" md-maxlength="150" rows="3" md-select-on-focus></textarea>
+      </md-input-container>
+
+      <md-button class="md-primary md-raised" type="submit">Submit</button>
+    </form>
+  </md-card-content>
+</md-card>
